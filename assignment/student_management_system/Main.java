@@ -59,9 +59,9 @@ class Main {
                         id = InputHandler.getInt();
                         isSuccess = newStudentService.deleteStuWithId(id);
                         if (isSuccess) {
-                            ConsoleOutput.showSuccess("Student with id: deleted successfully.");
+                            ConsoleOutput.showSuccess("Student with id:" + id + " deleted successfully.");
                         } else {
-                            ConsoleOutput.showError("Failed to delete student with id.");
+                            ConsoleOutput.showError("Failed to delete student with id:" + id);
                         }
 
                     }
